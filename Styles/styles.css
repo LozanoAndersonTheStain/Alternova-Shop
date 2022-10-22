@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kanit:wght@500&family=Lobster&family=Rubik+Iso&family=Russo+One&display=swap');
+
+/* Selector universal */
+* {
+    margin: .35rem;
+    box-sizing: border-box;
+}
+
+/* Cabecera */
+
+.header {
+    margin: 0;
+    width: 100%;
+    background: #fff;
+    border:  .1rem solid rgb(40, 197, 200);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.container-title {
+    margin: 0 300px;
+    text-align: center;
+}
+
+.logo {
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Title Shop */
+
+.container-tarjets {
+    margin-top: 1.2rem;
+}
+
+.title-section {
+    font-size: 1.8rem;
+    font-family: 'Kanit', sans-serif; 
+    text-align: center;
+}
+
+/* Products */
+
+.tarjets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+}
+
+.content-tarjet {
+    position: relative;
+}
+
+.content-tarjet:hover {
+    padding: 10px;
+    border: 1px solid #000000;
+    transition: .4s;
+}
+
+.img-tarjet {
+    width: 100%;
+    height: auto;
+    margin-bottom: .5rem;
+}
+
+
