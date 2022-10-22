@@ -30,7 +30,7 @@
 }
 
 .container-title {
-    margin: 0 300px;
+    margin: 0px;
     text-align: center;
 }
 
@@ -43,12 +43,17 @@
 .cart {
     position: fixed;
     top: 1px;
-    right: 0;
+    right: -100%;
     width: 460px;
     min-height: 100vh;
     background: #fff;
     padding: 20px;
     box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.4s;
+}
+
+.cart.active {
+    right: 0;
 }
 
 .title-cart {
@@ -76,7 +81,6 @@
     display: grid;
     row-gap: 0.5rem;
 }
-
 
 .cart-product-title {
     font-size: 1rem;
