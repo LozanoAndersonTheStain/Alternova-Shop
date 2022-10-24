@@ -1,114 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <title>Alternova Store</title>
     <!-- Css -->
-    <link rel="stylesheet" href="Styles/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="Styles/styles.css" />
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <div class="container-title">
-                <h1 class="logo">Alternova Store</h1>
-            </div>
-            <button class="icon"><i class="fa-solid fa-cart-shopping" id="icon" style="cursor: pointer"></i></button>
-            
-            
-            <!-- Cart -->
-            <div class="cart">
-                <h2 class="title-cart">You Cart</h2>
-                <!-- Content Cart -->
-                <div class="content-cart">
-                    <div class="cart-box">
-                        <img src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/b7250fc66cc04a76bd64ab37005ebe37_9366/shorts-4krft-sport-ultimate-knit-23-cm.jpg" alt="" class="img-cart">
-                        <div class="detail-box">
-                            <div class="cart-product-title">Objet</div>
-                            <div class="price-cart">$15000</div>
-                            <input type="number" value="1" class="quantity-cart">
-                        </div>
-                        <!-- Cart Remove -->
-                        <i class="fa-solid fa-trash-can cart-remove"></i>
-
-                        <!-- Total -->
-                        <div class="total">
-                            <div class="total-title">Total</div>
-                            <div class="total-price">$0</div>
-                        </div>
-
-                        <!-- Buy -->
-                        <button type="button" class="buy">Buy now</button>
-
-                        <!-- Close Cart -->
-                        <i class="fa-solid fa-xmark " id="close-cart"></i>
-                    </div>
-                </div>
-              </div> 
+      <div class="container">
+        <div class="container-title">
+          <h1 class="logo">Alternova Store</h1>
         </div>
+        <i
+          class="fa-solid fa-cart-shopping"
+          id="openCart"
+          style="cursor: pointer"
+        ></i>
+
+        <!-- Cart -->
+        <div class="cart">
+          <h2 class="title-cart">You Cart</h2>
+          <!-- Content Cart -->
+          <div class="content-cart">
+            <div class="cart-box">
+              <img
+                src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/b7250fc66cc04a76bd64ab37005ebe37_9366/shorts-4krft-sport-ultimate-knit-23-cm.jpg"
+                alt=""
+                class="img-cart"
+              />
+
+              <div class="detail-box">
+                <div class="cart-product-title">Objet</div>
+                <div class="price-cart">$15000</div>
+                <input type="number" value="1" class="quantity-cart" />
+              </div>
+              <!-- Cart Remove -->
+              <i class="fa-solid fa-trash-can cart-remove"></i>
+
+              <!-- Total -->
+              <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+              </div>
+
+              <!-- Buy -->
+              <button type="button" class="buy">Buy now</button>
+
+              <!-- Close Cart -->
+              <i class="fa-solid fa-xmark" id="close-cart"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Tarjets Product -->
     <section class="container-tarjets">
-        <h3 class="title-section">Products</h3>
-        <!-- Tarjets -->
-        <div class="tarjets">
-            <!-- Tarjet 1 -->
-            <div class="content-tarjet">
-                <img class="img-tarjet"src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/b7250fc66cc04a76bd64ab37005ebe37_9366/shorts-4krft-sport-ultimate-knit-23-cm.jpg" alt="" class="img-tarjet">
-                <h2 class="title-tarjet">
-                    Pantaloneta Adidas
-                </h2>
-                <span class="price">$15000</span>
-                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
-            </div>
-
-            <!-- 2 Tarjet -->
+      <h3 class="title-section">Products</h3>
+      <!-- Tarjets -->
+      <div class="tarjets">
+        <!-- Tarjet 1 -->
         <div class="content-tarjet">
-            <img src="https://tiendasmultisports.com/3793-large_default/camiseta-puma-classics-logo-tee-hombre-rjo-595132-11.jpg" alt="" class="img-tarjet">
-            <h2 class="title-tarjet">Camiseta Puma</h2>
-            <span class="price">$50000</span>
-            <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
-          </div>
-
-          <!-- 3 Tarjet -->
-          <div class="content-tarjet">
-              <img src="https://us.123rf.com/450wm/xmarshall/xmarshall1904/xmarshall190400484/121601651-viena-austria-agosto-7-2017-nike-air-jordan-4-retro-zapatillas-blancas-sobre-fondo-blanco-.jpg?ver=6" alt="" class="img-tarjet">
-              <h2 class="title-tarjet">Zapatos Jordan</h2>
-              <span class="price">$85000</span>
-              <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
-            </div>
-
-            <!-- 4 Tarjet -->
-            <div class="content-tarjet">
-                <img src="https://cf.shopee.com.co/file/21a48445342ccec2e7c77bca64209dcb" alt="" class="img-tarjet">
-                <h2 class="title-tarjet">Gorra Plana</h2>
-                <span class="price">$45000</span>
-                <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
-            </div>
-
-            <!-- 5 Tarjet -->
-        <div class="content-tarjet">
-            <img src="https://content.rolex.com/dam/2022/upright-bba-with-shadow/m126720vtnr-0001.png?impolicy=v6-upright&imwidth=270" alt="" class="img-tarjet">
-            <h2 class="title-tarjet">Reloj</h2>
-            <span class="price">$98000</span>
-            <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
-          </div>
-
-          <!-- 6 Tarjet -->
-        <div class="content-tarjet">
-            <img src="https://estampadosdreamagine.com.co/wp-content/uploads/2019/07/BUZOS-SACOS-PIZZA-REF.-1N-2.jpg" alt="" class="img-tarjet">
-            <h2 class="title-tarjet">Buzo "Pizza"</h2>
-            <span class="price">$185000</span>
-            <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
-          </div>
+          <img
+            class="img-tarjet"
+            src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/b7250fc66cc04a76bd64ab37005ebe37_9366/shorts-4krft-sport-ultimate-knit-23-cm.jpg"
+            alt=""
+            class="img-tarjet"
+          />
+          <h2 class="title-tarjet">Pantaloneta Adidas</h2>
+          <span class="price">$15000</span>
+          <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
         </div>
+
+        <!-- 2 Tarjet -->
+        <div class="content-tarjet">
+          <img
+            src="https://tiendasmultisports.com/3793-large_default/camiseta-puma-classics-logo-tee-hombre-rjo-595132-11.jpg"
+            alt=""
+            class="img-tarjet"
+          />
+          <h2 class="title-tarjet">Camiseta Puma</h2>
+          <span class="price">$50000</span>
+          <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+        </div>
+
+        <!-- 3 Tarjet -->
+        <div class="content-tarjet">
+          <img
+            src="https://us.123rf.com/450wm/xmarshall/xmarshall1904/xmarshall190400484/121601651-viena-austria-agosto-7-2017-nike-air-jordan-4-retro-zapatillas-blancas-sobre-fondo-blanco-.jpg?ver=6"
+            alt=""
+            class="img-tarjet"
+          />
+          <h2 class="title-tarjet">Zapatos Jordan</h2>
+          <span class="price">$85000</span>
+          <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+        </div>
+
+        <!-- 4 Tarjet -->
+        <div class="content-tarjet">
+          <img
+            src="https://i.pinimg.com/564x/9b/6b/43/9b6b43caa416f0fb528b035d1e96b59e.jpg"
+            alt=""
+            class="img-tarjet"
+          />
+          <h2 class="title-tarjet">Gorra Plana</h2>
+          <span class="price">$45000</span>
+          <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+        </div>
+
+        <!-- 5 Tarjet -->
+        <div class="content-tarjet">
+          <img
+            src="https://content.rolex.com/dam/2022/upright-bba-with-shadow/m126720vtnr-0001.png?impolicy=v6-upright&imwidth=270"
+            alt=""
+            class="img-tarjet"
+          />
+          <h2 class="title-tarjet">Reloj</h2>
+          <span class="price">$98000</span>
+          <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+        </div>
+
+        <!-- 6 Tarjet -->
+        <div class="content-tarjet">
+          <img
+            src="https://estampadosdreamagine.com.co/wp-content/uploads/2019/07/BUZOS-SACOS-PIZZA-REF.-1N-2.jpg"
+            alt=""
+            class="img-tarjet"
+          />
+          <h2 class="title-tarjet">Buzo "Pizza"</h2>
+          <span class="price">$185000</span>
+          <i class="fa-sharp fa-solid fa-cart-plus add-cart"></i>
+        </div>
+      </div>
     </section>
 
-    <script src="./Js/store.js"></script> 
-</body>
+    <script src="./Js/store.js"></script>
+  </body>
 </html>

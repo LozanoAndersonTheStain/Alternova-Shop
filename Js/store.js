@@ -1,9 +1,13 @@
-// Cart 
+// Cart
 
-let cartIcon = document.querySelectorById('.icon')
-let cart = document.querySelector('.cart')
-let closeCart = document.querySelectorById('#close-cart')
+const buttonOpen = document.querySelector('#openCart')
+const cart = document.querySelector('.cart')
+const buttonClose = document.querySelector('#close-cart')
 
-cartIcon.addEventListener('onclick' = () => {
-    cart.setAttribute.add('active')
+buttonOpen.addEventListener('click', () => {
+  cart.classList.toggle('active')
+})
+
+buttonClose.addEventListener('click', () => {
+  cart.classList.toggle('active')
 })
